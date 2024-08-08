@@ -5,6 +5,12 @@ class Calculator {
 	public static int addNum(int n, int m) {
 		return (n + m);
 	}
+	public static int subNum(int n, int m){
+		return (n - m);
+	}
+	public static int multiNum(int n,int m){
+		return (n * m);
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -28,17 +34,17 @@ class Calculator {
 			}
 				break;
 
-			// case '-' :{
-			// result =subNum(n,m);
-			// System.out.println("Result is -> "+result);
-			// }
-			// break;
+			 case '-' :{
+			 result =subNum(n,m);
+			 System.out.println("Result is -> "+result);
+			 }
+			 break;
 
-			// case '*' : {
-			// result =multiNum(n,m);
-			// System.out.println("Result is -> "+result);
-			// }
-			// break;
+			 case '*' : {
+			 result =multiNum(n,m);
+			 System.out.println("Result is -> "+result);
+			 }
+			 break;
 
 			// case '/' : {
 			// result =divNum(n,m);
