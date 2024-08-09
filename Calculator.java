@@ -12,6 +12,12 @@ class Calculator {
 		return (n * m);
 	}
 
+	public static int divNum(int n, int m){
+		return (n / m);
+	}
+	public static int modNum(int n, int m){
+		return (n % m);
+	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter First Number -> ");
@@ -35,28 +41,28 @@ class Calculator {
 				break;
 
 			 case '-' :{
-			 result =subNum(n,m);
+			 result = subNum(n,m);
 			 System.out.println("Result is -> "+result);
 			 }
 			 break;
 
 			 case '*' : {
-			 result =multiNum(n,m);
+			 result = multiNum(n,m);
 			 System.out.println("Result is -> "+result);
 			 }
 			 break;
 
-			// case '/' : {
-			// result =divNum(n,m);
-			// System.out.println("Result is -> "+result);
-			// }
-			// break;
+			case '/' : {
+			result = divNum(n,m);
+			System.out.println("Result is -> "+result);
+			}
+			break;
 
-			// case '%' : {
-			// result =modNum(n,m);
-			// System.out.println("Result is -> "+result);
-			// }
-			// break;
+			case '%' : {
+			result = modNum(n,m);
+			System.out.println("Result is -> "+result);
+			}
+			break;
 
 			default:
 				System.out.println("Invalid Input	");
